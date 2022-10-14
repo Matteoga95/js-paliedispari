@@ -13,21 +13,20 @@ function generateRandomInteger(max) {
 const computerNum = generateRandomInteger(5)
 
 //funzione se è dispari
-function IsUneven(numero)
+function IsDispari(numero)
 {
-    if (isNaN(numero) == false)
-    {
-        return (numero %2 == 1 ?  true : false);
-    }
-    else
-    {
-        return null;
-    }
+   if (numero %2 == 1){
+    return true
+
+   }else {
+    return false
+   }
+   
+
 }
 
-console.log(computerNum);
 //se la somma dei due numeri è pari o dispari (usando una funzione) Dichiariamo chi ha vinto.
-if (IsUneven(userNum + computerNum)){
+if (IsDispari(userNum + computerNum)){
 
     //è dispari
 
